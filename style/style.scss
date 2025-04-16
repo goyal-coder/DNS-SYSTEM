@@ -1,0 +1,22 @@
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  transition: transform 0.3s ease-in-out;
+}
+img:hover {
+  transform: scale(1.03);
+}
+
+@import "components/header";
+@import "components/resets";
+@import "components/navbar";
+@import "components/main";
+@import "components/footer";
+@import "components/how";
+@import "components/history";
+@import "components/brain_dump";
+@import "components/internet_boss";
+@import "components/refresher";
+@import "components/video";

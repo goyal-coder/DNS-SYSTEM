@@ -1,0 +1,29 @@
+.brain-dump {
+  ol {
+    list-style: disc;
+    text-align: left;
+    padding: 2rem 2rem;
+
+    li {
+      margin: 1.2rem 0;
+    }
+  }
+  img {
+    border-radius: 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .brain-dump {
+    ol {
+      padding: 2rem 7rem;
+      line-height: 3rem;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .how p {
+    font-size: 1em;
+  }
+}

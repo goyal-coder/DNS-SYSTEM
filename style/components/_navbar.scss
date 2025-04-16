@@ -1,0 +1,44 @@
+nav {
+  ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 2rem;
+    margin-bottom: 5rem;
+
+    li a {
+      color: rgba(0, 0, 0, 0.6);
+      font-size: 1.6em;
+      text-decoration: none;
+      transition: color 1.2s ease, text-shadow 0.3s ease; // Added transition for smooth effect
+    }
+    li a:hover {
+      color: #000;
+      text-shadow: 0 0 10px rgb(0, 0, 0);
+    }
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  nav {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  nav {
+    display: block;
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 1000;
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  nav {
+    font-size: 1em;
+  }
+}

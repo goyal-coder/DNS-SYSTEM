@@ -1,0 +1,55 @@
+/* Footer Styles */
+footer {
+  background-color: #333; /* Dark background for footer */
+  color: white; /* White text color */
+  padding: 3rem 0; /* Vertical padding */
+  text-align: center; /* Center the text */
+  font-family: "Roboto", sans-serif; /* Use Roboto font */
+  margin-top: 2rem;
+}
+
+footer .footer-container {
+  max-width: 1200px;
+  margin: 0 auto; /* Center align the container */
+  padding: 0 1rem;
+}
+
+footer .footer-content {
+  margin-top: 1rem;
+}
+
+footer .footer-content p {
+  font-size: 1rem;
+}
+
+footer .social-icons {
+  margin-top: 1rem;
+}
+
+footer .social-icons a {
+  color: white;
+
+  font-size: 1.5rem;
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 1024px) {
+  footer {
+    font-size: 1.2rem;
+  }
+
+  footer .social-icons a {
+    font-size: 3em;
+    margin: 0 0.75rem;
+  }
+  footer .footer-content p {
+    font-size: 1.6em;
+  }
+}
+
+// @media screen and (min-width: 1280px) {
+//   .how p {
+//     font-size: 3em;
+//   }
+// }

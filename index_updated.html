@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description"
+            content="Understand DNS (Domain Name System) with a fun, simple guide for students and techies." />
+        <meta name="keywords"
+            content="DNS, Domain Name System, DNS Resolver, Web, Internet, IP Address, Web development" />
+        <meta name="author" content="Nandini" />
+        <title>How DNS Works</title>
+
+        <!-- External Styles & Scripts -->
+        <link rel="stylesheet" href="style/style.css" />
+        <script src="js/script.js" defer></script>
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+
+        <!-- Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" />
+
+        <!-- favicon -->
+        <link rel="icon" type="image/png" href="favicon/Mylogo.png">
+    </head>
+
+    <body>
+        <header>
+            <div class="header">
+                <div class="homeIcon"><i class="fa fa-globe" aria-hidden="true"></i></div>
+                <div class="homeContent">
+                    <h1>How DNS Actually Works</h1>
+                    <p>The real MVP behind every website you type 💻🌍</p>
+                </div>
+                <audio id="clickSound" src="assets/clickSound.wav"></audio>
+                <div class="downArrow">
+                    <a href="#home">
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <!-- navbar -->
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#footer">Footer</a></li>
+                </ul>
+            </nav>
+
+            <section class=" how" id="home">
+                <h2>🧠 What in the World is DNS?</h2>
+                <p>DNS = <strong>Domain Name System</strong>, aka <strong>the phonebook of the internet 📞🌐</strong>.
+                </p>
+                <p>Your computer’s like: “Bro, I speak IP, not human 😩. What even is this <em>‘google dot com’</em>??”
+                </p>
+                <p>So it calls up DNS like a chaddi buddy and goes, “Hey fam, what’s Google’s address?”</p>
+                <div class="image">
+                    <img src="https://miro.medium.com/v2/resize:fit:1016/1*vBtgd-ut-emiAT0XhRN_gQ.jpeg"
+                        alt="Illustration showing how DNS converts domain names to IP addresses" />
+                </div>
+            </section>
+
+            <section class="how">
+                <h2>🛣️ The DNS Journey (aka the “Find My IP” quest):</h2>
+                <ol>
+                    <li><strong>Local Cache:</strong> “Ah, I remember that IP 😎!” ✅ Done. No drama.</li>
+                    <li><strong>DNS Resolver:</strong> ISP’s internet detective 🕵️‍♂️.</li>
+                    <li><strong>Root Server:</strong> Points to `.com` directory like grandma 👵.</li>
+                    <li><strong>TLD Server:</strong> “Google lives with this authoritative server 👇.”</li>
+                    <li><strong>Authoritative Server:</strong> “That’s <code>142.250.77.206</code> my dear!”</li>
+                    <li>DNS Resolver returns like a hero 🦸 → browser says: “Goooooogle, here I comeeeee!”</li>
+                </ol>
+                <div class="image">
+                    <img src="https://image.slidesharecdn.com/ec2-talk2-091020090656-phpapp02/95/slide-36-1024.jpg"
+                        alt="Flowchart of DNS lookup journey from user to server" />
+                </div>
+            </section>
+
+            <section class="how">
+                <h2>🌳 DNS Structure – Not as Boring as It Sounds!</h2>
+                <div class="image">
+                    <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/gq/2017/02/DNS.png"
+                        alt="Diagram showing DNS structure hierarchy" />
+                </div>
+                <ul>
+                    <li><strong>DNS Records:</strong> IPs stored like a family tree 👨‍👩‍👧‍👦.</li>
+                    <li><strong>Namespace:</strong> Names sorted like school roll call 📋.</li>
+                    <li><strong>Name Server:</strong> Mini-database saying <code>name = IP</code>.</li>
+                </ul>
+            </section>
+
+            <section class="how">
+                <h2>🌐 Types of Domains</h2>
+                <ul>
+                    <li><strong>Generic:</strong> `.com`, `.org`, `.net` — cool uncles/aunties.</li>
+                    <li><strong>Country:</strong> `.in`, `.us` — desi versions 🇮🇳🇺🇸.</li>
+                    <li><strong>Inverse Domain:</strong> Reverse lookup 🔍.</li>
+                </ul>
+                <div class="image">
+                    <img src="https://static.semrush.com/blog/uploads/media/64/c7/64c71d88e3ffbc712a5bbdcec1794272/753b16ef0460fd8d55f80f1ce6cd58b3/DtiMjZcfoDxvRloHy7fLT6up3uaFYYgoekbKu6VxbK4yC2fGy4XKnasnfC3nYHZE8kQveWh8tvyajaxfL_ps96vRGbrzlzb8oZ9aSAi4uAENF3eGZx2VhT-39lyFisfIboGkXwW8ntarrDpIgLUJarA.png"
+                        alt="Image showing different types of domains like TLDs and ccTLDs" />
+                </div>
+            </section>
+
+            <section class="how">
+                <h2>🧩 DNS Resolver – The Wingman</h2>
+                <p>A DNS resolver starts the lookup. It’s like:</p>
+                <blockquote>“Don’t worry fam, I got this 🕶️.”</blockquote>
+                <div class="image">
+                    <img src="https://th.bing.com/th/id/OIP.kuCGReHvW27qQgmoZ9zKbQHaC9?rs=1&pid=ImgDetMain"
+                        alt="DNS resolver sending requests to various DNS servers" />
+                </div>
+            </section>
+
+            <section class="how">
+                <h2>🔄 Types of DNS Queries</h2>
+                <ul>
+                    <li><strong>Recursive:</strong> "Get me the answer or admit defeat!" 😤</li>
+                    <li><strong>Iterative:</strong> "Tell me what you know, I’ll ask around." 🤝</li>
+                    <li><strong>Non-Recursive:</strong> “Already cached, bro. Here you go!” 😎</li>
+                </ul>
+                <div class="image">
+                    <img src="https://media2.dev.to/dynamic/image/width=800%2Cheight=%2Cfit=scale-down%2Cgravity=auto%2Cformat=auto/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/vkmlf7xhvi26qnywz87k.png"
+                        alt="Visual explanation of recursive, iterative, and non-recursive DNS queries" />
+                </div>
+            </section>
+
+            <section class="how">
+                <h2>🧠 DNS Caching</h2>
+                <p>Resolver stores past addresses like an elephant 🐘 — *almost* never forgets.</p>
+                <div class="image">
+                    <img src="https://cdn.ttgtmedia.com/rms/onlineimages/dns_caching_flow-f.png"
+                        alt="Illustration of DNS caching process in action" />
+                </div>
+            </section>
+
+            <section class="how">
+                <h2>📛 Domain Hierarchy – Who’s Who?</h2>
+                <ul>
+                    <li><strong>TLD:</strong> `.com`, `.org`, `.biz`, `.in` — internet surname 👑</li>
+                    <li><strong>SLD:</strong> Part before the dot → “geeksforgeeks” in `geeksforgeeks.org`</li>
+                    <li><strong>Subdomains:</strong> Babies like `admin.geeksforgeeks.org`, stackable 🍔</li>
+                </ul>
+                <div class="image">
+                    <img src="https://th.bing.com/th/id/OIP.cSAmyBzxU35cXO4zhpaIkgHaEH?rs=1&pid=ImgDetMain"
+                        alt="Domain hierarchy showing TLD, SLD, and subdomain" />
+                </div>
+            </section>
+
+            <section class="how">
+                <h2>📂 DNS Record Types</h2>
+                <ul>
+                    <li><strong>A Record:</strong> Maps to IPv4 📍</li>
+                    <li><strong>AAAA Record:</strong> Maps to IPv6 💪</li>
+                    <li><strong>CNAME Record:</strong> Nicknames 🎭</li>
+                    <li><strong>MX Record:</strong> Email routing 📬</li>
+                    <li><strong>TXT Record:</strong> Texty configs 😤</li>
+                </ul>
+                <div class="image">
+                    <img src="https://th.bing.com/th/id/OIP.LwcdTrF1pdc0_gu5pQniGAHaEK?rs=1&pid=ImgDetMain"
+                        alt="Table showing different DNS record types and their purpose" />
+                </div>
+            </section>
+
+            <section class="how">
+                <h2>📞 What Happens in a DNS Request?</h2>
+                <div class="image">
+                    <img src="https://media.geeksforgeeks.org/wp-content/uploads/20210706213210/DNS2.png"
+                        alt="Step-by-step image of what happens during a DNS request" />
+                </div>
+            </section>
+        </main>
+
+        <footer id="footer">
+            <div class="footer-container">
+                <div class="footer-content">
+                    <p>&copy; 2025 How internet works?. All Rights Reserved.</p>
+                    <div class="social-icons">
+                        <a href="https://t.me/goyal_coder" class="fab fa-telegram-plane" target="_blank"
+                            aria-label="Telegram"></a>
+                        <a href="https://github.com/goyal-coder" class="fab fa-github" target="_blank"
+                            aria-label="GitHub"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+</html>
